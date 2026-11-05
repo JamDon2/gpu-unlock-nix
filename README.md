@@ -8,7 +8,10 @@ before the `nvidia` driver takes the card.
 
 ```nix
 # flake.nix
-inputs.gpu-unlock.url = "github:JamDon2/gpu-unlock-nix";
+inputs.gpu-unlock = {
+  url = "github:JamDon2/gpu-unlock-nix";
+  inputs.nixpkgs.follows = "nixpkgs";
+};
 
 # configuration.nix
 imports = [ inputs.gpu-unlock.nixosModules.default ];
