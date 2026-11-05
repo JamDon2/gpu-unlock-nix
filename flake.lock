@@ -1,0 +1,44 @@
+{
+  "nodes": {
+    "gpu-unlock-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1793226676,
+        "narHash": "sha256-1KD/J1S1uyI5GGoTwQ1cU/sXeEKlG54exSvi6U+j73M=",
+        "owner": "Zagitta",
+        "repo": "gpu-unlock",
+        "rev": "7eb51bccae0a0b7e599e084d971170e9a1e82d0c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Zagitta",
+        "repo": "gpu-unlock",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1793726008,
+        "narHash": "sha256-jQp1wKvbwWdLBASTXkSi/VYmDJ5AbBi1WvcMt9HWJC8=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "1d060086d60cb76a40cf37109f979d88a5bd6396",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "gpu-unlock-src": "gpu-unlock-src",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
