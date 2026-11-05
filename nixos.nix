@@ -108,7 +108,11 @@ in
             "systemd-modules-load.service"
             "systemd-udev-trigger.service"
           ];
-          unitConfig.DefaultDependencies = false;
+          restartIfChanged = false;
+          unitConfig = {
+            DefaultDependencies = false;
+            ConditionPathExists = "!/sys/module/nvidia";
+          };
           serviceConfig = {
             Type = "oneshot";
             RemainAfterExit = true;
